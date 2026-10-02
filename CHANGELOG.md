@@ -5,6 +5,29 @@ All notable changes to claude-ads are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+* **Source refresh 2026-10-01**: re-verified 57 platform, API, policy, and
+  regulator sources, 5 repository and tracker sources, and 42 dependent claims
+  against their current pages. The Microsoft API claim no longer records a
+  REST-only cutover on 2026-10-01: Microsoft now states that SOAP keeps
+  receiving features until full deprecation on 2027-01-31. The Apple reporting
+  and API claims note the Campaign Management API sunset on 2027-01-26, the
+  Amazon creative policy source points at its current ad-policy URL, and the
+  Google Ads MCP source is pinned to the current repository head.
+* **Not refreshed**: the two X pages, two TikTok API for Business pages, and
+  the Reddit help root did not serve substantive content to independent
+  fetches, so CLM-0018, CLM-0204, and CLM-0208 keep their 2026-09-10 dates and
+  need browser verification before the 2026-10-10 expiry.
+
+### Fixed
+
+* **Portable collision test**: the release audit's case-insensitive collision
+  test stages its fixture through the Git index, so it no longer fails on
+  case-insensitive filesystems such as default macOS APFS.
+
 ## [2.0.2] - 2026-09-10
 
 ### Added

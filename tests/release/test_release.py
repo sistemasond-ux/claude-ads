@@ -666,7 +666,7 @@ def test_claude_command_contract_distinguishes_plugin_namespace() -> None:
 
 def test_release_grounding_gate_validates_control_registry_and_profiles() -> None:
     root = RELEASE_SCRIPT.parents[1]
-    result = check_grounding_and_capabilities(root, release.date(2026, 9, 10))
+    result = check_grounding_and_capabilities(root, release.date(2026, 10, 1))
     assert result["registered_control_count"] == 414
     assert result["source_grounded_control_count"] > 0
     assert result["enabled_scoring_profile_count"] == 0
@@ -684,8 +684,8 @@ def test_release_grounding_gate_rejects_stale_load_bearing_source(
         for item in source_doc["sources"]
         if item["id"] == "google-ads-conversion-goals-official"
     )
-    source["retrieved_at"] = "2026-08-25"
-    source["refresh_due"] = "2026-08-25"
+    source["retrieved_at"] = "2026-09-01"
+    source["refresh_due"] = "2026-10-01"
     original_json_object = release._json_object
 
     def json_object(path: Path, label: str):
@@ -698,7 +698,7 @@ def test_release_grounding_gate_rejects_stale_load_bearing_source(
         ReleaseError,
         match="load-bearing source is stale: google-ads-conversion-goals-official",
     ):
-        check_grounding_and_capabilities(root, release.date(2026, 9, 11))
+        check_grounding_and_capabilities(root, release.date(2026, 10, 2))
 
 
 def test_vulnerability_exception_evidence_is_release_packaged() -> None:

@@ -255,12 +255,16 @@ def test_sensitive_artifact_ignore_patterns_are_present() -> None:
 
 def test_audit_rejects_case_insensitive_path_collisions(tmp_path: Path) -> None:
     root = _repository(tmp_path)
-    _write(
-        root,
-        "skills/Ads-Google/SKILL.md",
-        "---\nname: Ads-Google\ndescription: collision fixture.\n---\n",
-    )
-    _git(root, "add", "skills/Ads-Google/SKILL.md")
+    # Stage the colliding path through the index only: on a case-insensitive
+    # filesystem, writing and adding it would overwrite the existing entry.
+    blob = subprocess.run(
+        ["git", "hash-object", "-w", "--stdin"],
+        cwd=root,
+        input=b"---\nname: Ads-Google\ndescription: collision fixture.\n---\n",
+        check=True,
+        capture_output=True,
+    ).stdout.decode("ascii").strip()
+    _git(root, "update-index", "--add", "--cacheinfo", f"100644,{blob},skills/Ads-Google/SKILL.md")
     errors = audit_repository(root)
     assert any("case-insensitive path collision" in error for error in errors)
 

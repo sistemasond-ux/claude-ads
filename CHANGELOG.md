@@ -9,18 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-* **Source refresh 2026-10-01**: re-verified 57 platform, API, policy, and
-  regulator sources, 5 repository and tracker sources, and 42 dependent claims
+* **Source refresh 2026-10-01**: re-verified 62 platform, API, policy, and
+  regulator sources, 5 repository and tracker sources, and 45 dependent claims
   against their current pages. The Microsoft API claim no longer records a
   REST-only cutover on 2026-10-01: Microsoft now states that SOAP keeps
   receiving features until full deprecation on 2027-01-31. The Apple reporting
-  and API claims note the Campaign Management API sunset on 2027-01-26, the
-  Amazon creative policy source points at its current ad-policy URL, and the
-  Google Ads MCP source is pinned to the current repository head.
-* **Not refreshed**: the two X pages, two TikTok API for Business pages, and
-  the Reddit help root did not serve substantive content to independent
-  fetches, so CLM-0018, CLM-0204, and CLM-0208 keep their 2026-09-10 dates and
-  need browser verification before the 2026-10-10 expiry.
+  and API claims note the Campaign Management API sunset on 2027-01-26. The Amazon
+  creative policy source points at its current ad-policy URL, and the Google
+  Ads MCP source is pinned to the current repository head. Client-rendered X, TikTok,
+  Reddit, and Pinterest pages were verified in a browser, and the Pinterest
+  DATE field against Pinterest's official v5 OpenAPI description. Only the two
+  private-corpus sources and their non-load-bearing claims keep older dates.
 
 ### Fixed
 

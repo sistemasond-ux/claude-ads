@@ -33,7 +33,7 @@ values, and request a current preview or API validation.
 | TikTok | `tiktok-ad-format-policy-official`: [Ad format and functionality](https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-ad-format-and-functionality) | Creative and editorial requirements |
 | Microsoft | `microsoft-ad-types-official`: [ResponsiveSearchAd schema](https://learn.microsoft.com/en-us/advertising/campaign-management-service/responsivesearchad?view=bingads-13) | Current v13 responsive-search-ad behavior |
 | Apple | `apple-ads-creative-official`: [Apple Ads resources](https://ads.apple.com/app-store/resources) | Apple Ads resources and creative entry points |
-| Amazon | `amazon-creative-acceptance-official`: [General requirements](https://advertising.amazon.com/help/GDG2CCTRU55BYY2Y) | Amazon Ads general creative requirements |
+| Amazon | `amazon-creative-acceptance-official`: [General requirements](https://advertising.amazon.com/resources/ad-policy/general-policies) | Amazon Ads general creative requirements |
 | Reddit | `reddit-ads-help-official` — [Reddit Ads Help](https://business.reddithelp.com/s/) | Current Reddit help and policy discovery |
 | Pinterest | `pinterest-ad-specs-official` — [Pinterest ad specs](https://help.pinterest.com/en/business/article/pinterest-product-specs) | Pinterest formats and assets |
 | Snapchat | `snap-creative-specs-official` — [Snap creative specifications](https://forbusiness.snapchat.com/advertising/ad-formats) | Snap ad-format entry point |

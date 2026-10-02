@@ -217,8 +217,8 @@
       "verdict": "verified",
       "source_ids": ["x-conversion-tracking"],
       "load_bearing": true,
-      "last_verified": "2026-09-10",
-      "refresh_due": "2026-10-10",
+      "last_verified": "2026-10-01",
+      "refresh_due": "2026-10-31",
       "owner": "x-evidence-owner"
     },
     {
@@ -469,8 +469,8 @@
       "verdict": "verified",
       "source_ids": ["tiktok-integrated-reporting-official"],
       "load_bearing": true,
-      "last_verified": "2026-09-10",
-      "refresh_due": "2026-10-10",
+      "last_verified": "2026-10-01",
+      "refresh_due": "2026-10-31",
       "owner": "native-export-owner"
     },
     {
@@ -518,8 +518,8 @@
       "verdict": "verified",
       "source_ids": ["pinterest-ads-reporting-official"],
       "load_bearing": true,
-      "last_verified": "2026-09-10",
-      "refresh_due": "2026-10-10",
+      "last_verified": "2026-10-01",
+      "refresh_due": "2026-10-31",
       "owner": "native-export-owner"
     },
     {

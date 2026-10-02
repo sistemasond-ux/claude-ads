@@ -259,13 +259,13 @@
       "locator": "https://business-api.tiktok.com/portal",
       "source_type": "api-doc",
       "authority_tier": 1,
-      "retrieved_at": "2026-09-10",
-      "refresh_due": "2026-10-10",
+      "retrieved_at": "2026-10-01",
+      "refresh_due": "2026-10-31",
       "confidence": "high",
       "license": "TikTok for Business developer terms; citation only",
       "redistribution": "metadata-only",
       "claim_ids": ["CLM-0010"],
-      "notes": "The portal rendered only a client-side shell to independent fetches on 2026-10-01; verify in a browser before the current window expires."
+      "notes": "The portal renders client-side; verified in a browser on 2026-10-01."
     },
     {
       "id": "microsoft-advertising-api-official",
@@ -354,13 +354,13 @@
       "locator": "https://business.x.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites/about-conversion-tracking",
       "source_type": "official-doc",
       "authority_tier": 1,
-      "retrieved_at": "2026-09-10",
-      "refresh_due": "2026-10-10",
+      "retrieved_at": "2026-10-01",
+      "refresh_due": "2026-10-31",
       "confidence": "high",
       "license": "X documentation terms; citation only",
       "redistribution": "metadata-only",
       "claim_ids": ["CLM-0018"],
-      "notes": "business.x.com served a bot challenge to independent fetches on 2026-10-01; verify in a signed-in browser before the current window expires."
+      "notes": "The locator redirects to the X Help Center (help.x.com); verified in a browser on 2026-10-01 after independent fetches hit a bot challenge."
     },
     {
       "id": "brainstein-private-doctrine",
@@ -489,8 +489,8 @@
       "locator": "https://business.reddithelp.com/s/",
       "source_type": "official-doc",
       "authority_tier": 1,
-      "retrieved_at": "2026-08-25",
-      "refresh_due": "2026-09-24",
+      "retrieved_at": "2026-10-01",
+      "refresh_due": "2026-10-31",
       "confidence": "medium",
       "license": "Reddit terms; citation only",
       "redistribution": "metadata-only",
@@ -529,13 +529,13 @@
       "locator": "https://business.x.com/en/help/campaign-setup/creative-ad-specifications",
       "source_type": "official-doc",
       "authority_tier": 1,
-      "retrieved_at": "2026-09-10",
-      "refresh_due": "2026-10-10",
+      "retrieved_at": "2026-10-01",
+      "refresh_due": "2026-10-31",
       "confidence": "high",
       "license": "X terms; citation only",
       "redistribution": "metadata-only",
       "claim_ids": [],
-      "notes": "business.x.com served a bot challenge to independent fetches on 2026-10-01; verify in a signed-in browser before the current window expires."
+      "notes": "The locator redirects to the X Help Center (help.x.com); verified in a browser on 2026-10-01 after independent fetches hit a bot challenge."
     },
     {
       "id": "google-smart-bidding-official",
@@ -813,13 +813,13 @@
       "locator": "https://business-api.tiktok.com/portal/docs/basic-reports/v1.3",
       "source_type": "api-doc",
       "authority_tier": 1,
-      "retrieved_at": "2026-09-10",
-      "refresh_due": "2026-10-10",
+      "retrieved_at": "2026-10-01",
+      "refresh_due": "2026-10-31",
       "confidence": "high",
       "license": "TikTok for Business developer terms; citation only",
       "redistribution": "metadata-only",
       "claim_ids": ["CLM-0204"],
-      "notes": "The v1.3 basic-reports page rendered only a client-side shell to independent fetches on 2026-10-01; verify the AUCTION_AD fields in a browser before the current window expires."
+      "notes": "The page renders client-side; verified in a browser on 2026-10-01, with AUCTION_AD, stat_time_day, spend, and conversion fields on the linked v1.3 supported-dimensions and supported-metrics pages."
     },
     {
       "id": "microsoft-ad-performance-report-official",
@@ -873,7 +873,8 @@
       "confidence": "high",
       "license": "Pinterest developer documentation terms; citation only",
       "redistribution": "metadata-only",
-      "claim_ids": ["CLM-0208"]
+      "claim_ids": ["CLM-0208"],
+      "notes": "The guide renders client-side; on 2026-10-01 the DATE response field (time-based granularity), SPEND_IN_MICRO_DOLLAR, and TOTAL_CONVERSIONS were confirmed in Pinterest's official v5 OpenAPI description (github.com/pinterest/api-description, commit 51aca009f10a)."
     },
     {
       "id": "snap-ads-measurement-official",
